@@ -1,0 +1,438 @@
+// Import Google Font
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+
+// Font Variables
+$font-family-base: "DM Sans", sans-serif;
+$headings-font-family: "DM Sans", sans-serif;
+
+// Colors
+$primary-color: #014cc4;
+$gray-light-color: #f4f3f3;
+$green-light-color: #dff8e5;
+$white-color: #ffffff;
+$black-color: #151515;
+$navy-blue-color: #152339;
+
+body {
+  font-family: $font-family-base;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// Typography Global
+h1 {
+  font-size: 60px;
+  font-weight: bold;
+  font-family: $headings-font-family;
+}
+
+h2 {
+  font-size: 45px;
+  font-weight: bold;
+  font-family: $headings-font-family;
+}
+
+h3 {
+  font-size: 32px;
+  font-family: $headings-font-family;
+}
+
+h4 {
+  font-size: 24px;
+  font-family: $headings-font-family;
+}
+
+.pre-title {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: $font-family-base;
+}
+
+p {
+  font-size: 16px;
+  font-family: $font-family-base;
+}
+
+.smaller-text {
+  font-size: 14px;
+  font-family: $font-family-base;
+}
+
+// Font Weights
+.font-light {
+  font-weight: 300;
+}
+
+.font-regular {
+  font-weight: 400;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-bold {
+  font-weight: 600;
+}
+
+.font-black {
+  font-weight: 700;
+}
+
+.font-extra-black {
+  font-weight: 800;
+}
+
+// Typography Mobile
+@media (max-width: 991px) {
+  h1 {
+    font-size: 48px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  h3 {
+    font-size: 28px;
+  }
+}
+
+// Buttons
+.primary-button {
+  background-color: $primary-color;
+  color: $white-color;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: $font-family-base;
+  line-height: 20.83px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  font-weight: 600;
+}
+
+.outline-button {
+  background-color: transparent;
+  color: $primary-color;
+  border: 1px solid $primary-color;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: $font-family-base;
+  line-height: 20.83px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  font-weight: 600;
+}
+
+.secondary-button {
+  background-color: transparent;
+  color: $white-color;
+  border: 1px solid $white-color;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: $font-family-base;
+  line-height: 20.83px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  font-weight: 600;
+}
+
+// bg
+.bg-primary {
+  background-color: $primary-color;
+}
+
+.bg-gray-light {
+  background-color: $gray-light-color;
+}
+
+.bg-green-light {
+  background-color: $green-light-color;
+}
+
+.bg-white {
+  background-color: $white-color;
+}
+
+.bg-black {
+  background-color: $black-color;
+}
+
+.bg-navy-blue {
+  background-color: $navy-blue-color;
+}
+
+// text
+.text-primary {
+  color: $primary-color;
+}
+
+.text-gray {
+  color: #909090;
+}
+
+.text-gray-light {
+  color: $gray-light-color;
+}
+
+.text-green-light {
+  color: $green-light-color;
+}
+
+.text-white {
+  color: $white-color;
+}
+
+.text-black {
+  color: $black-color;
+}
+
+.text-navy-blue {
+  color: $navy-blue-color;
+}
+
+.secondary-cta-btn {
+  background-color: rgba($color: #fff, $alpha: 0.2);
+  color: $white-color;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: $font-family-base;
+  line-height: 20.83px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  font-weight: 600;
+  border: 1px solid $white-color;
+}
+
+@media screen and (max-width: 991px) {
+  .cta-btn {
+    width: 100%;
+    text-align: center;
+  }
+  .secondary-cta-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.hero-section {
+  background-image: linear-gradient(
+      90deg,
+      rgba(93, 112, 134, 0.75) 0%,
+      rgba(255, 255, 255, 0.25) 100%
+    ),
+    url("../images/hero-page-bg.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 991px) {
+  .hero-section {
+    padding: 5rem 0 5rem 0;
+  }
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid $white-color;
+}
+
+.p2 {
+  margin-left: -30px;
+}
+
+.p3 {
+  margin-left: -30px;
+}
+
+.announcement {
+  text-align: center;
+}
+
+@media screen and (max-width: 991px) {
+  .announcement {
+    text-align: left;
+  }
+}
+
+.vector-parent {
+  position: relative;
+}
+
+.vector1 {
+  position: absolute;
+  bottom: 400px;
+  right: 100px;
+  z-index: 1;
+}
+
+.doctor {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.doctor-parent {
+  position: relative;
+  z-index: 2;
+}
+
+@media screen and (max-width: 991px) {
+  .doctor {
+    display: none;
+  }
+  .vector1 {
+    display: none;
+  }
+}
+
+.doctor2 {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.how-it-works-cta {
+  display: none;
+}
+
+.how-it-works-cta2 {
+  display: block;
+}
+
+@media screen and (max-width: 991px) {
+  .how-it-works-cta {
+    display: block;
+  }
+
+  .how-it-works-cta2 {
+    display: none;
+  }
+}
+
+.cta-search {
+  width: 50%;
+}
+
+@media screen and (max-width: 991px) {
+  .cta-search {
+    width: 100%;
+  }
+}
+
+.services {
+  margin-top: 10rem;
+}
+
+.condition-buttons {
+  overflow-x: auto;
+  white-space: nowrap;
+  max-width: 100%;
+}
+
+.condition-buttons .btn {
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.read-more {
+  display: inline-flex;
+  align-items: center;
+  font-size: 1rem;
+  color: $primary-color;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.read-more:hover {
+  color: #0056b3;
+}
+
+.read-more .arrow {
+  margin-left: 0.5rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.read-more:hover .arrow {
+  transform: translateX(0.25rem);
+}
+.card-shadow {
+  box-shadow: 0px 4px 40px 0px #0000001a;
+}
+
+.circle-indicator {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.circle.active {
+  background-color: #000;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+}
+.circle {
+  background-color: #8d8d8d;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+}
+
+.arrow-btn {
+  border: none;
+  cursor: pointer;
+  font-size: 40px;
+  background-color: transparent;
+}
+
+.faqs {
+  width: 75%;
+}
+
+@media screen and (max-width: 991px) {
+  .faqs {
+    width: 100%;
+  }
+}
+
+.cta {
+  background-image: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.75) 0%,
+      rgba(255, 255, 255, 0.25) 100%
+    ),
+    url("../images/cta-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.logo {
+  width: 150px;
+  height: 100px;
+  object-fit: contain;
+}
